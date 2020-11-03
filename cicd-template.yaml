@@ -175,10 +175,10 @@ objects:
                   }
                 }
               }
-            }
-            stage('Archive App') {
-              steps {
-                sh "${mvnCmd} deploy -DskipTests=true -P nexus3"
+              stage('Archive App') {
+                steps {
+                  sh "${mvnCmd} deploy -DskipTests=true -P nexus3"
+                }
               }
             }
           }
