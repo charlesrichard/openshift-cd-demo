@@ -84,7 +84,9 @@ objects:
         - name: STAGE_PROJECT
           value: ${STAGE_PROJECT}
         - name: ENABLE_QUAY
-          value: ${ENABLE_QUAY}
+          value: ${ENABLE_QUAY
+        - name: APPLICATION_SOURCE_REPO
+          value: 'https://github.com/charlesrichard/openshift-tasks.git'
         jenkinsfile: |-
           def mvnCmd = "mvn -s configuration/cicd-settings-nexus3.xml"
 
